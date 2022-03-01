@@ -1,0 +1,35 @@
+<!--References: 
+https://www.javatpoint.com/python-check-number-is-odd-or-even
+https://stackoverflow.com/questions/53513/how-do-i-check-if-a-list-is-empty
+-->
+
+{% extends '_layout.html' %}
+
+{% block body %}
+
+<h1>Your Result</h1>
+<h3> You entered: </h3>
+<p> {{ integer }} </p>
+<h3> Your entry is: </h3>
+
+<div>
+    {% for integer in results %}
+        {% if (integer % 2) == 0 %}
+            <p>an EVEN integer!</p>
+        {% else %}
+            <p>an ODD integer!</p>
+        {% endif %}
+    {% endfor %} 
+    
+    {% if not results %}
+        <p>is not an integer. </p>
+    {% endif %}
+
+</div>
+
+<div>
+    <a href="/" class="btn btn-warning">Try Again!</a>
+</div>
+
+
+{% endblock %}

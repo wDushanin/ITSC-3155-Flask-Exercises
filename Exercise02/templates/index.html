@@ -1,0 +1,14 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+<form action="/result" method="get">
+  <div class="mb-3">
+    <h1>Odd or Even?</h1>
+    <h3>Please enter an integer to find out if it is even or odd!</h3>
+    <label for="integer" class="form-label">Your number:</label>
+    <input type="text" class="form-control" name="integer" id="integer" autocomplete="off">
+  </div>
+    <button type="submit" class="btn btn-warning">Submit</button>
+</form>
+
+{% endblock %}
