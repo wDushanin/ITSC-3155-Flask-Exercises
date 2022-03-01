@@ -1,0 +1,14 @@
+
+{% extends '_layout.html' %}
+
+{% block body %}
+<div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Current Date:</h5>
+      <p class="card-text"> {{ date }}</p>
+      <h5 class="card-title">Current Time:</h5>
+      <p class="card-text"> {{ time }}</p>
+      <a href="/" class="btn btn-primary">Reload</a>
+    </div>
+  </div>
+{% endblock %}
