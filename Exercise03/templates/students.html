@@ -3,5 +3,23 @@
 {% block body %}
 
 <p> test </p>
+<p> {{ name }} is a member of {{ organization }}</p>
+
+<table>
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Organization</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for key, value in dictionary.items() %}
+     <tr>
+         <td> {{ name }} </td>
+         <td> {{ organization }} </td>
+     </tr>
+    {% endfor %}
+    </tbody>
+  </table>
 
 {% endblock %}
